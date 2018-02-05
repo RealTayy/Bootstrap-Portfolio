@@ -436,7 +436,7 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
 }
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+.hvr-hang:hover, .hvr-hang:active {
   -webkit-animation-name: hvr-hang-sink, hvr-hang;
   animation-name: hvr-hang-sink, hvr-hang;
   -webkit-animation-duration: .3s, 1.5s;
@@ -2196,7 +2196,7 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
 }
@@ -2667,12 +2667,12 @@
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
   transition-property: transform;
-  left: calc(50% - 10px);
-  bottom: 0;
-  border-width: 10px 10px 0 10px;
-  border-color: #e1e1e1 transparent transparent transparent;
+  left: calc(50% - 20px);  
+  bottom: -10px;
+  border-width: 20px 20px 0px 20px;
+  border-color: #007AB9 transparent transparent transparent;
 }
-.hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before, .hvr-bubble-bottom:active:before {
+.hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:active:before {
   -webkit-transform: translateY(10px);
   transform: translateY(10px);
 }

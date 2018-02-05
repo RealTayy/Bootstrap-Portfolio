@@ -55,14 +55,7 @@ h1 {
 }
 
 .nav-link:hover {
-    color: #fff;
-}
-
-.content-wrapper {        
-    position: relative;  
-    width: 100%;
-    height: 5000px;
-    background: white;  
+    color: #fff; 
 }
 
 .floating-text {
@@ -73,12 +66,28 @@ h1 {
     font-weight: bolder;
     font-family: 'Roboto', sans-serif; 
     color: #fff;
-    text-align: center;    
-    margin: auto;
+    text-align: center;             
+}
+
+.content-wrapper {        
+    position: relative;  
+    width: 100%;
+    height: 5000px;
+    background: white;  
 }
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.btn-header {    
+    background: #007AB9;
+    color: #fff;    
+    top:-40px;    
+}
+
+.btn:focus, .btn:active {    
+    box-shadow: none;
 }
