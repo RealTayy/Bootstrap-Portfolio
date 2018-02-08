@@ -9,20 +9,37 @@ header {
     top: 0;
     background: url("../images/header-bg2.jpeg") no-repeat center;    
     background-size: cover;
-    height: calc(100vh + 70px); /* Set this to same as height in banner-wrapper pls */
+    height: calc(100vh + 60px); /* Set this to same as height in banner-wrapper pls */
     width: inherit;
 }
 
 .banner-wrapper {            
-    margin: auto;
+    margin: auto;    
+    font-family: 'Nunito', sans-serif;        
     background: url("../images/black50.png");
-    font-family: 'Nunito', sans-serif;    
-    padding: 5px;
-    height: 70px; /* Change stuff in header-background when you change this pls*/
+    height: 60px; /* Change stuff in header-background when you change this pls*/
 }
 
 .header-bg {    
     width: inherit;             
+}
+
+.navbar {    
+    width: inherit;    
+    height: 60px;
+    background: none; 
+    padding: 0 10px 0 10px;           
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+
 }
 
 .cointainer {
@@ -30,29 +47,11 @@ header {
     margin: auto;    
 }
 
-.logo {
-    width: 60px;
-    height: 60px;
-    float: left;
-    margin-right: 10px;
-}
-
 h1 {    
     font-weight: bold;        
     color: #ffffff;
     line-height: 60px;
     margin: 0;
-}
-
-.nav-link {    
-    font-size: 20px;
-    padding: 3px 10px 3px 10px;
-
-    color: #fff;    
-}
-
-.nav-link:hover {
-    color: #fff; 
 }
 
 .floating-text {
@@ -113,11 +112,6 @@ a:hover {
     border: 3px solid #333;
 }
 
-/* Delete this part later pls */
-#contact-section {
-    height: 1000px;
-}
-
 #portfolio-section {
     background: #2D89B7;
     color: #fff;
@@ -125,6 +119,10 @@ a:hover {
 
 #portfolio-section .header-slate {
     border-color: #fff;
+}
+
+form {
+    margin: 30px;
 }
 
 #connect-section {
@@ -200,16 +198,6 @@ a:hover {
     .btn-header {
         top: -20px;
     }
-    .header-background {            
-        height: calc(100vh + 50px); /* Set this to same as height in banner-wrapper pls */
-    }    
-    .banner-wrapper {            
-        height: 50px; /* Change stuff in header-background when you change this pls*/
-    }
-    h1 {
-        font-size: 1.5rem;
-        line-height: 40px;
-    }
     .logo {
         width: 40px;
         height: 40px;
@@ -236,6 +224,9 @@ a:hover {
     .selfie {
         padding: 0 2rem 2rem 2rem;        
         border: none;
+    }
+    p {
+        margin: 0 16px 16px 16px;
     }
     
 }
