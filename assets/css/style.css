@@ -64,9 +64,12 @@ h1 {
     text-align: center;             
 }
 
-.btn-header {    
+.btn {
     background: #007AB9;
-    color: #fff;    
+    color: #fff; 
+}
+
+.btn-header {       
     top:-40px;    
 }
 
