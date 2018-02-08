@@ -6,9 +6,8 @@ header {
 
 .header-background {            
     position: fixed;
-    top: -70px; /* Set this to same as height in banner-wrapper pls */
-    background: url("../images/header-bg2.jpeg");
-    background-repeat: no-repeat;
+    top: 0;
+    background: url("../images/header-bg2.jpeg") no-repeat center;    
     background-size: cover;
     height: calc(100vh + 70px); /* Set this to same as height in banner-wrapper pls */
     width: inherit;
@@ -27,7 +26,7 @@ header {
 }
 
 .cointainer {
-    width: 1100px;
+    width: 1140px;
     margin: auto;    
 }
 
@@ -58,7 +57,7 @@ h1 {
 
 .floating-text {
     position: fixed;
-    width: 100%;         
+    width: inherit;         
     top: 35vh;
     font-size: 70px;    
     font-family: 'Open Sans', sans-serif;        
@@ -75,7 +74,7 @@ h1 {
 .content-wrapper {        
     position: relative;  
     padding: 80px 0 80px 0;    
-    width: 100%;
+    width: inherit;
     background: white;
     border-top: 1px solid transparent;    
     font-family: 'Roboto', sans-serif;
@@ -115,7 +114,7 @@ a:hover {
 }
 
 /* Delete this part later pls */
-#portfolio-section, #contact-section {
+#contact-section {
     height: 1000px;
 }
 
@@ -133,7 +132,7 @@ a:hover {
 }
 
 .connect-logo {
-    opacity: .75;
+    opacity: .7;
     height: 80px;
 }
 
@@ -145,7 +144,7 @@ a:hover {
     position: relative;
     padding: 5px;      
     height: 120px;  
-    width: 100%;
+    width: inherit;
     background: #333;    
     font-family: 'Roboto', sans-serif;
     color: #828282;
@@ -159,4 +158,103 @@ a:hover {
 
 .copyright {
     color: #fff;
+}
+
+.card-slot {
+    padding: 15px;
+}
+
+.card {
+    color: #333;
+    border-width: 0px;    
+}
+
+.card:hover {
+    color: #333;
+}
+
+/* Large */
+@media (max-width: 1200px) and (min-width: 993px){
+    .cointainer {
+        width: 960px;
+    }
+    .connect-logo {        
+        height: 60px;
+    }
+    .floating-text {
+        font-size: 60px;
+    }
+}
+
+/* Medium */
+@media (max-width: 992px) {
+    .cointainer {
+        width: 720px;
+    }
+    .connect-logo {        
+        height: 40px;
+    }
+    .floating-text {
+        font-size: 45px;
+    }
+    .btn-header {
+        top: -20px;
+    }
+    .header-background {            
+        height: calc(100vh + 50px); /* Set this to same as height in banner-wrapper pls */
+    }    
+    .banner-wrapper {            
+        height: 50px; /* Change stuff in header-background when you change this pls*/
+    }
+    h1 {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Small */
+@media (max-width: 767px) {
+    .cointainer {
+        width: 540px;
+    }
+    .connect-logo {        
+        height: 100px;
+    }
+    .soc-button {
+        padding: 15px 0 15px 0;
+    }
+    .floating-text {        
+        font-size: 20px;
+    }
+    .btn-header {
+        top: 20px;
+    }
+    .selfie {
+        padding: 0 2rem 2rem 2rem;        
+        border: none;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .cointainer {
+        width: 100%;
+    }
+    .connect-logo {        
+        height: 60px;        
+    }
+    .col {
+        padding: 0;
+    }
+    .soc-button {
+        padding: 15px 0 15px 0;
+    }
+    .row {
+        width: 100%;
+        margin: 0;
+    }
 }
